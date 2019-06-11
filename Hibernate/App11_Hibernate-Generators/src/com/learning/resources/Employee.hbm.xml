@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.learning.entity.Employee" table="emp2">
+		<id name="eno" column="ENO">
+		
+			<!--	<generator class="assigned"/></generator>	-->
+			<!--  	<generator class="increment"/></generator>	-->
+			<!--	<generator class="sequence"/></generator>	--> <!-- MySQL does not supports sequence  -->	
+			<!-- 	<generator class="hilo"/></generator>	 	-->	
+			
+			  		<generator class="native"></generator>		
+			  		
+			<!--  	<generator class="identity"/></generator>	-->
+			<!--  	<generator class="seqhilo"></generator>		--> <!-- MySQL does not supports sequence high low  -->	
+			<!--  	<generator class="uuid"></generator>		--> <!-- ID must be string type -->
+			<!--   	<generator class="guid"></generator>		-->
+			<!-- etc, etc -->		
+			
+		</id>
+		<property name="ename" column="ENAME" />
+		<property name="esal" column="ESAL"/>
+		<property name="eaddr" column="EADDR"/>
+	</class>
+</hibernate-mapping>

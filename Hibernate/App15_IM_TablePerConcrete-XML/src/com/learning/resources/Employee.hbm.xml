@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.learning.entity.Employee" table="emp5">
+		<id name="eno" column="ENO">
+			<generator class="increment" />
+		</id>
+		<property name="ename" column="ENAME" />
+
+		<union-subclass name="com.learning.entity.RegularEmployee" table="reg_emp5">
+			<property name="salary" column="SALARY" />
+			<property name="bonus" column="BONUS" />
+		</union-subclass>
+
+		<union-subclass	name="com.learning.entity.ContractEmployee" table="con_emp5">
+			<property name="payPerHour" column="payPerHour" />
+			<property name="contractDuration" column="contractDuration" />
+		</union-subclass>
+
+	</class>
+</hibernate-mapping>

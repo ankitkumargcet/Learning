@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.learning.entity.Employee" table="emp3">
+		<id name="eno" column="ENO">
+			<generator class="increment"></generator>
+		</id>
+		<property name="ename" column="ENAME" />
+		<property name="esal" column="ESAL" />
+
+		<component name="eaddr" class="com.learning.entity.Address">
+			<property name="city" column="CITY" />
+			<property name="country" column="COUNTRY" />
+			<property name="pincode" column="PINCODE" />
+		</component>
+	</class>
+</hibernate-mapping>
