@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.learning.entity.Address" table="add_1t1">
+		<id name="addno" column="AddNo">
+			<generator class="foreign">
+				<param name="property">employee</param>
+			</generator>
+		</id>
+		<property name="addressLine1" column="AddressLine1"></property>
+		<property name="city" column="City" />
+		<property name="state" column="State" />
+		<property name="country" column="Country" />
+		<property name="pincode" column="Pincode" />
+
+		<one-to-one name="employee"></one-to-one>
+
+	</class>
+</hibernate-mapping>
+
+
