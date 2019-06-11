@@ -37,7 +37,7 @@ public class Insert {
 		session.persist(q2);
 
 		tx.commit();
-		System.out.println("Saved Sucessfully");
+		System.out.println("Record Saved Sucessfully");
 		session.close();
 
 	}
