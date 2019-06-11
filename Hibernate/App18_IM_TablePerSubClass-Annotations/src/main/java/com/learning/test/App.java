@@ -22,6 +22,7 @@ public class App {
 		emp2.setEname("Vishal Shekher");
 		emp2.setSalary(5000);
 		emp2.setBonus(500);
+		
 
 		ContractEmployee emp3 = new ContractEmployee();
 		emp3.setEname("Rajesh Sharma");
