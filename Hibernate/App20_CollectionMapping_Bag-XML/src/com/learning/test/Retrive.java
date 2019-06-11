@@ -24,6 +24,7 @@ public class Retrive {
 			Question q = itr.next();
 			System.out.println("Question: " + q.getQname() + "?");
 
+			
 			List<String> l = q.getAnswers();
 			Iterator<String> itr2 = l.iterator();
 			while (itr2.hasNext()) {
