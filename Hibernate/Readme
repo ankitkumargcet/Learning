@@ -1,8 +1,7 @@
 This Repository contains all the essential Training materials for Hibernate
 
-Make sure to create user library with hibernate 3.6.10 jars and mysql-connector jar and add the library to the projects.
+Make sure to create user library with hibernate 5.x jars and mysql-connector jar and add the library to the projects.
 
-XML configurations are used with Hibernate 3.x
-Annotations are used with Hibernate 5.x
+XML configurations and Annotations are used with Hibernate 5.x
 
 Also make sure to add Apache tomcat server 9 to ignore errors and warnings.
