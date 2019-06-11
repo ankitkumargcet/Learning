@@ -1,13 +1,39 @@
 package com.learning.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "add_1t1")
 public class Address {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "AddNo")
 	private int addno;
+	
+	@Column(name = "AddressLine1")
 	private String addressLine1;
+	
+	@Column(name = "City")
 	private String city;
+	
+	@Column(name = "State")
 	private String state;
+	
+	@Column(name = "Country")
 	private String country;
+	
+	@Column(name = "Pincode")
 	private int pincode;
+	
+	@OneToOne(targetEntity = Employee.class)
+	@JoinColumn(name="AddNo")
 	private Employee employee;
 
 	public int getAddno() {
