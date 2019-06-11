@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.learning.entity.Question" table="ques_list">
+		<id name="qid" column="QID">
+			<generator class="increment" />
+		</id>
+		<property name="qname" column="QNAME" />
+
+		<list name="answers">
+			<key column="QID"/>
+			<index column="AID" />
+			<element column="Answer" type="string" />
+		</list>
+
+	</class>
+</hibernate-mapping>
