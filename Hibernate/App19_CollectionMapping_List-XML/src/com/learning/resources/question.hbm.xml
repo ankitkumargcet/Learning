@@ -10,7 +10,7 @@
 		</id>
 		<property name="qname" column="QNAME" />
 
-		<list name="answers">
+		<list name="answers" table="ans_list">
 			<key column="QID"/>
 			<index column="AID" />
 			<element column="Answer" type="string" />

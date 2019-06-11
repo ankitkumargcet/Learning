@@ -3,7 +3,7 @@ package com.learning.test;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.classic.Session;
+import org.hibernate.Session;
 
 import com.learning.entity.Employee;
 
