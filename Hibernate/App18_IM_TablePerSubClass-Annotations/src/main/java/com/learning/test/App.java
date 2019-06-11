@@ -28,7 +28,8 @@ public class App {
 		emp3.setEname("Rajesh Sharma");
 		emp3.setPayPerHour(800);
 		emp3.setContractDuration("12 Hours");
-
+		
+		
 		session.persist(emp1);
 		session.persist(emp2);
 		session.persist(emp3);
