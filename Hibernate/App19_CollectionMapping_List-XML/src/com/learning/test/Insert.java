@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 import com.learning.entity.Question;
 import com.learning.util.HibernateUtil;
 
-public class Test {
+public class Insert {
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = session.beginTransaction();
