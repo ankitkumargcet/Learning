@@ -9,10 +9,10 @@
 			<generator class="identity"></generator>
 		</id>
 		<property name="qname" column="QNAME" />
-		<list name="answers" fetch="select" cascade="all">
+		<list name="answers" table="que_ans_mtm" fetch="select" cascade="all">
 			<key column="QID" />
 			<index column="AID" />
-			<many-to-many class="com.learning.entity.Answer" />
+			<many-to-many class="com.learning.entity.Answer" column="QAID"/>
 		</list>
 	</class>
 </hibernate-mapping>
