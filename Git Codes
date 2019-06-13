@@ -2,7 +2,7 @@ Go to the repository and type below to initialise git on the repository
 >git init
 
 Add origin to the folder
->git remote add origin "https://github.com/ankitkumargcet/Training.git"
+>git remote add origin https://github.com/ankitkumargcet/Learning.git
 
 Pulling Files
 >git pull origin master
