@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.learning.entity.Question" table="que_mtm">
+		<id name="id" column="ID">
+			<generator class="identity"></generator>
+		</id>
+		<property name="qname" column="QNAME" />
+		<list name="answers" fetch="select" cascade="all">
+			<key column="QID" />
+			<index column="AID" />
+			<many-to-many class="com.learning.entity.Answer" />
+		</list>
+	</class>
+</hibernate-mapping>
