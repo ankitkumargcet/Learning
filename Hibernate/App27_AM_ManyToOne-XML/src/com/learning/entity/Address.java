@@ -7,7 +7,6 @@ public class Address {
 	private String state;
 	private String country;
 	private int pincode;
-	private Employee employee;
 
 	public int getAddressId() {
 		return addressId;
@@ -55,14 +54,6 @@ public class Address {
 
 	public void setPincode(int pincode) {
 		this.pincode = pincode;
-	}
-
-	public Employee getEmployee() {
-		return employee;
-	}
-
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
 	}
 
 }
