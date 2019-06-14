@@ -2,13 +2,9 @@ package com.learning.test;
 
 import java.util.List;
 
-import javax.persistence.TypedQuery;
-
 import org.hibernate.Criteria;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.criterion.Order;
-import org.hibernate.criterion.Restrictions;
 
 import com.learning.entity.Employee;
 import com.learning.util.HibernateUtil;
