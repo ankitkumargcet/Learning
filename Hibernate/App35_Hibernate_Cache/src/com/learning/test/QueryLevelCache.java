@@ -27,7 +27,7 @@ public class QueryLevelCache {
 		
 		System.out.println();
 		
-		// If calling without setting cacheable then query is executing once
+		// If calling after setting cacheable then query is executing once
 		System.out.println("=========After setting Cachable=========");
 		query.setHint("org.hibernate.cacheable", Boolean.TRUE);
 		List<Employee> list4 = query.getResultList();
