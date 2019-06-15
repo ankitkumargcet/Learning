@@ -29,7 +29,7 @@ public class Test {
 //			emp.setEname("AAA");
 //			emp.setEsal(5000);
 //			emp.setEaddr("HYD");
-//			session.update(emp); 					// It will only update the records once committed
+			session.update(emp); 					// It will only update the records once committed
 			
 			emp.setEno(444);
 			emp.setEname("DDD");

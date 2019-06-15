@@ -33,19 +33,19 @@ public class Test {
 */
 			
 			System.out.println("Before calling load()");
-			Employee emp = (Employee) session.load(Employee.class, 555); 					// hibernate query is displayed in b/w because of lazy loading
+			Employee emp = (Employee) session.load(Employee.class, 444); 					// hibernate query is displayed in b/w because of lazy loading
 //			System.out.println(emp);														// It will give exception as it is calling all properties from database
 			System.out.println(emp.getEno());												// It will not give exception as using the local reference Key
 			System.out.println("After calling load()");										// Database interaction will not happen unless properties are called
 																							// note: Calling Other than primary key only will interact with database
-/*
+
 			System.out.println("Employee Details");											// No null return so will throw Exception if Record not available
 			System.out.println("------------------------");
 			System.out.println("Employee Number: " + emp.getEno());
 			System.out.println("Employee Name: " + emp.getEname());
 			System.out.println("Employee Salary: " + emp.getEsal());
 			System.out.println("Employee Address: " + emp.getEaddr());
-*/
+
 
 		} catch (Exception e) {
 			System.out.println("Retrival Failed: " + e.getMessage());
