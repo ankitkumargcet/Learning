@@ -1,0 +1,33 @@
+Go to the repository and type below to initialise git on the repository
+>git init
+
+Add origin to the folder
+>git remote add origin https://github.com/ankitkumargcet/Learning.git
+
+Pulling Files
+>git pull origin master
+
+Add some files or folders inside the Repository
+
+After Adding type the below code to see changes in the repository
+>git status
+
+Add the red colour files or folders to index before committing
+>git add "file/folder name"
+
+Now commit the file which are added to index with comments
+>git commit -m "First Commit"
+
+To add all at once and commit
+>git commit -a -m "First Commit"
+
+To push we need to generate public SSH key
+>ssh-keygen
+
+Use the Keygen to get key and save the SSH key in github
+
+After that run the below command to establish secure connection
+>ssh -T git@github.com
+
+Once the Connection is Established successfully push the commited code
+>git push origin master
