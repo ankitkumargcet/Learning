@@ -1,0 +1,7 @@
+This Repository contains all the essential Training materials for Spring
+
+Make sure to create user library with Spring 5.x jars and mysql-connector jar and add the library to the projects.
+
+XML configurations and Annotations are used with Spring 5.x
+
+Also make sure to add Apache tomcat server 9 to ignore errors and warnings.
